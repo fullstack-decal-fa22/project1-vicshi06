@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Shi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="about">
+
+        <img src="temp.png" id = "personal" style="width: 400px;">
+
+        <div class = "white">
+            <h1 id = "name" style = "font-size: 90px; font-weight: 500; margin-right: 130px;">Victor Shi</h1>
+            <p style = "font-size: 40px; font-weight: 500; display: block;">CS & Music @ UC Berkeley</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="box">
+                    <button>Contact Me</button>
+                </div>
+            </a>
+            
+            <p class="p-to-copy-to" style = "font-size: 20px; font-weight: 500; margin-top: 100px;">
+                By the way, who is this?</p>
+            <input placeholder="type into me!" class="input-to-copy" />
+        </div>
+        <div class = "black"></div>
+    </div>
+
+    <div class="work">
+        <div class="list">
+            <div class="project">Enigma</div>
+            <div class="project">Gitlet</div>
+            <div class="project">C++</div>
+        </div>
+        <div class="content">
+            <div class="image"></div>
+            <div class="project small">A</div>
+            <div class="description">B</div>
+        </div>
+        <div class="content">
+            <div class="image"></div>
+            <div class="project small">A</div>
+            <div class="description">B</div>
+        </div>
+        <div class="content">
+            <div class="image"></div>
+            <div class="project small">A</div>
+            <div class="description">B</div>
+        </div>
+    </div>
+</body>
+<script>
+    const input = document.querySelector('.input-to-copy');
+    const title = document.getElementById('name');
+
+    input.addEventListener('keyup', function () {
+        title.innerText = input.value;
+    });
+</script>
+</html>
